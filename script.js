@@ -137,6 +137,12 @@ for (let whiteBox of whiteBoxes) {
           toRestart();
         }
       }
+		for (let card of removedCards) {
+         const imgBox = document.getElementById(`${card}`);
+         imgBox.remove();
+     }
     }
   });
 }
+
+
