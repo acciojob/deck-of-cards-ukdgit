@@ -96,3 +96,8 @@ body {
 .won {
   display: none;
 }
+
+#deck {
+	display: flex;
+	justify-content: center;
+}
