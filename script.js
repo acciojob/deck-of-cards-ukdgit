@@ -16,7 +16,7 @@ if (removedCards === null) {
 }
 
 const toRestart = () => {
-  if (winner === 52) {
+  if (winner === 5) {
     $(document).ready(function () {
       $(".won").show();
     });
@@ -25,7 +25,7 @@ const toRestart = () => {
 
 if (winner === null) {
   winner = 0;
-} else if (winner === 52) {
+} else if (winner === 5) {
   toRestart();
 }
 
@@ -94,7 +94,7 @@ for (let whiteBox of whiteBoxes) {
 
   whiteBox.addEventListener("dragleave", (e) => {
     console.log("DragLeave has been triggered");
-    // e.target.className = "whiteBox";
+    e.target.className = "whiteBox";
     this.className = "empty";
   });
 
